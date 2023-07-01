@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+h1{
+    color:rgb(255, 0, 217);
+}
+input [type=text],select{
+    width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+ background-color:purple;
+}
+div {
+  border-radius: 5px;
+  background-color:rgb(196, 199, 217);
+  padding: 20px;
+}
+    </style>
+    <div>
+    <center>
+    <form action="/url" method="GET">
+       <h1> <label for="First Name">First Name:</label></h1><br>
+       <input type="text" name="first_name" placeholder="  " required><br>
+       <h1><label for="Last Name">Last Name:</label></h1><br>
+        <input type="text" name="last_name" placeholder=" " required><br>
+       <h1><label for="Email Id">Email Id:</label></h1><br>
+        <input type="text" name="Emai_Id" placeholder=" " required><br>
+       <h1><label for="Phone Number">Phone Number:</label></h1><br>
+        <input type="text" name="Ph_num" placeholder=" " maxlength="10" required>  <br>
+        <h1><button type="submit">Submit</button> </h1>
+        </form>
+    </center>
+</div>
+    <script>
+        const form=document.querySelector('form');
+        form.addEventListener('submit',(event) =>{
+            event.preventDefault();
+            alert('Your Response Has been Record');
+        });
+    </script>   
+</body>
+</html>
